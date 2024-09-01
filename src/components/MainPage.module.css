@@ -1,0 +1,208 @@
+.MainPage {
+  background-color: #dae5f5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.MainPageImage {
+  width: 500px;
+  height: 300px;
+}
+
+.lockImage {
+  width: 10px;
+}
+
+.footerSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #292929;
+  font-size: 14px;
+}
+
+span {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.mainBarContainer {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerSection {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #001f8b;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 21px;
+}
+.groupSymbolContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.groupName {
+  font-size: 20px;
+  margin: 0;
+}
+
+.noteInputContainer {
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #001f8b;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+.sendButton {
+  transform: translateY(-100%);
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.sendIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.notesSection {
+  flex: 1;
+  margin-bottom: 15px;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.noteContainer {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  position: relative;
+}
+
+.timestamp {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  color: #888;
+}
+.backButton {
+  bottom: 6px;
+  position: absolute;
+  left: -34px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mainBarContainer {
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .headerSection {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    position: relative;
+  }
+
+  .backButton {
+    display: block;
+  }
+
+  .backIcon {
+    width: 10px;
+    /* height: 25px; */
+  }
+
+  .groupSymbolContainer {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .groupName {
+    font-size: 18px;
+  }
+
+  .noteInputContainer {
+    padding: 10px;
+    background-color: #001f8b;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .textarea {
+    height: 80px;
+    padding: 8px;
+  }
+
+  .sendButton {
+    right: 10px;
+    bottom: 10px;
+    height: 25px;
+    width: 25px;
+    border: none;
+  }
+
+  .notesSection {
+    margin-bottom: 70px;
+  }
+
+  .noteContainer {
+    max-height: 60px;
+  }
+
+  .timestamp {
+    font-size: 10px;
+    right: 5px;
+  }
+}
